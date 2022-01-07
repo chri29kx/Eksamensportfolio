@@ -1,0 +1,136 @@
+/* burgermenu */
+.toggle-btn {
+  display: none;
+}
+@media (max-width: 600px) {
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    margin-left: 5%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.shown {
+    /* border-top: 1px solid #000; */
+    padding-top: 2rem;
+    display: flex;
+    /* margin-left: -55%;
+    margin-top: -10%; */
+
+    flex-flow: column;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+}
+/* burgermenu */
+
+#meh2 {
+  height: 100vh;
+  width: 100%;
+}
+.min_tekst {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin: 2%;
+}
+
+.colwide {
+  font-family: "Poppins", sans-serif;
+  margin: 2%;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .colwide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .cv_overskrift {
+    position: absolute;
+    padding: 125px 115px;
+    color: aliceblue;
+    font-size: 4rem;
+  }
+  .arbejde_overskrift {
+    position: absolute;
+    padding: 125px 23px;
+    color: aliceblue;
+    font-size: 4rem;
+  }
+
+  .mit_arbejde {
+    position: relative;
+  }
+
+  .arbejde_pic {
+    display: block;
+    width: 100%;
+  }
+
+  .arbejde_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.25s;
+    font-size: 1.9rem;
+  }
+
+  .arbejde_overlay:hover {
+    opacity: 0;
+    transition: 0.25s;
+  }
+
+  .cv {
+    position: relative;
+  }
+
+  .cv_pic {
+    display: block;
+    width: 100%;
+  }
+
+  .cv_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.25s;
+    font-size: 2rem;
+  }
+
+  .cv_overlay:hover {
+    opacity: 0;
+    transition: 0.25s;
+  }
+}
