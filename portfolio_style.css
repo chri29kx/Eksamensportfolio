@@ -1,0 +1,111 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(39, 39, 37);
+}
+
+h1:hover {
+  color: yellow;
+}
+
+.forside {
+  position: relative;
+  text-align: center;
+}
+
+/*pil*/
+
+@media (min-width: 600px) {
+  .arrow-down {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .arrow-down::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 50%;
+    bottom: -40%;
+    left: 48%;
+    border-right: 7px solid white;
+    border-bottom: 7px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-animation: 2s arrow infinite ease;
+    animation: 2s arrow infinite ease;
+  }
+
+  @-webkit-keyframes arrow {
+    0%,
+    100% {
+      top: 50px;
+    }
+    50% {
+      top: 80px;
+    }
+  }
+  @keyframes arrow {
+    0%,
+    100% {
+      top: 50px;
+    }
+    50% {
+      top: 100px;
+    }
+  }
+}
+
+/*Temaer*/
+#tema2,
+#tema3,
+#tema4,
+#tema5,
+#tema6 {
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  margin: 2%;
+}
+
+@media (min-width: 810px) {
+  #tema2,
+  #tema3,
+  #tema4,
+  #tema5,
+  #tema6 {
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+    color: antiquewhite;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    font-size: 5rem;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Staatliches", cursive;
+  }
+}
+@media (max-width: 810px) {
+  h1 {
+    font-size: 3rem;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Staatliches", cursive;
+  }
+}
