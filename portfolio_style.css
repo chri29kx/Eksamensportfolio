@@ -81,6 +81,7 @@ h1:hover {
   #tema6 {
     gap: 30px;
     font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
     color: antiquewhite;
     margin: 2%;
     display: grid;
