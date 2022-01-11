@@ -58,6 +58,18 @@ h1 {
 
   font-family: "Staatliches", cursive;
 }
+@media (max-width: 810px) {
+  h1 {
+    font-size: 3rem;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Staatliches", cursive;
+  }
+}
 
 .forside {
   position: relative;
